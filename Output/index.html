@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" type="text/css">
     <title>ListMaker</title>
   </head>
@@ -24,17 +25,14 @@
               <input id="comment" type="text" placeholder="Next Item">
             </div>
             <div class="col-xs-4 col-md-2">
-              <button type="submit" class="btn">Post</button>
+              <button type="submit" class="btn"><i class="material-icons">&#xE145;</i>
+              </button>
             </div>
           </form>
         </div>
         <ul id="com" class="comments">
-          <li>first comments</li>
-          <!--make invisible, connect to js function
-          button delete 
-          button edit
-          -->
-          <li>next comments</li>
+          <li id="list0"> <a class="done"><i class="material-icons">&#xE876;</i></a><span>first comments</span><a class="delete"><i class="material-icons">&#xE872;</i></a><a class="edit"><i class="material-icons">&#xE150;</i></a></li>
+          <li id="list1"><a class="done"><i class="material-icons">&#xE876;</i></a><span>next comments</span><a class="delete"><i class="material-icons">&#xE872;</i></a><a class="edit"><i class="material-icons">&#xE150;</i></a></li>
         </ul>
       </div>
     </div>
